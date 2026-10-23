@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Forever Garden | Premium Artificial Flowers & Plants</title>
-<link rel="icon" href="images/fav.png" type="image/png">
+<link rel="icon" href="fav.png" type="png">
 <meta name="description" content="Premium artificial trees, flowers & plants for hotels, restaurants, cafés, banquet halls, offices and homes. Pan-India delivery.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600&family=Great+Vibes&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
@@ -447,7 +447,7 @@ footer .mapwrap iframe{height:200px}
 
 <!-- ========== PRELOADER: TREE GROWING ANIMATION ========== -->
 <div id="preloader">
-    <img src="images/logo1.png" alt="Forever Garden Logo" class="pl-logo">
+    <img src="logo1.png" alt="Forever Garden Logo" class="pl-logo">
     <div class="pl-title">Forever Garden</div>
     <div class="pl-sub">Crafting Green Spaces for a Better Tomorrow</div>
 </div>
@@ -455,7 +455,7 @@ footer .mapwrap iframe{height:200px}
 <!-- ========== HEADER ========== -->
 <header>
   <div class="container nav">
-    <a href="#home" class="logo" aria-label="Forever Garden – Home"><img src="images/logo1.png" alt="Forever Garden"><span class="brand"><b>Forever Garden</b><small>Crafting Green Spaces</small></span></a>
+    <a href="#home" class="logo" aria-label="Forever Garden – Home"><img src="logo1.png" alt="Forever Garden"><span class="brand"><b>Forever Garden</b><small>Crafting Green Spaces</small></span></a>
     <nav id="nav">
       <ul>
         <li><a href="#home" data-m="home" class="active">Home</a></li>
@@ -602,7 +602,7 @@ footer .mapwrap iframe{height:200px}
   <div class="container">
     <div class="fgrid">
       <div class="fcol">
-        <a href="#home" class="logo" aria-label="Forever Garden – Home"><img src="images/logo1.png" alt="Forever Garden"></a>
+        <a href="#home" class="logo" aria-label="Forever Garden – Home"><img src="logo1.png" alt="Forever Garden"></a>
         <p>Forever Garden brings premium artificial trees, flowers and plants to hotels, restaurants, cafés, banquet halls, offices and homes — zero maintenance, always fresh. We deliver all over India.</p>
         <div class="social">
           <a href="https://instagram.com/forevergardenindia" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM17.5 5.5a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4zM7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 1.8A3.2 3.2 0 003.8 7v10A3.2 3.2 0 007 20.2h10a3.2 3.2 0 003.2-3.2V7A3.2 3.2 0 0017 3.8z"/></svg></a>
@@ -664,10 +664,10 @@ footer .mapwrap iframe{height:200px}
 /* ========== DATA ========== */
 const U = id => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=1400&q=70`;
 const IMG = {
-  hotel:'images/try.png', rest:('images/try1.png'),
-  home:('images/try2.png'), banq:('images/try.png'),
-  office:('images/banner2.jpg'), resort:U('photo-1540541338287-41700207dee6'),
-  flower:'images/banner2.jpg', plant:U('photo-1485955900006-10f4d324d411'),
+  hotel:'try.png', rest:('try1.png'),
+  home:('try2.png'), banq:('try.png'),
+  office:('banner2.jpg'), resort:U('photo-1540541338287-41700207dee6'),
+  flower:'banner2.jpg', plant:U('photo-1485955900006-10f4d324d411'),
   lobby:U('photo-1551882547-ff40c63fe5fa'), palm:U('photo-1509223197845-458d87318791'),
   wall:U('photo-1416879595882-3373a0480b5b'), pot:U('photo-1459411552884-841db9b3cc2a')
 };
@@ -692,10 +692,10 @@ const TYPES = {
 };
 /* Mobile banners (portrait). If a file is missing, the desktop banner is shown instead. */
 const MIMG={
-  hotel:'images/mobile-banner-3.jpg',      // green lobby tree
-  restaurant:'images/mobile-banner-2.jpg', // golden tree hall
-  home:'images/mobile-banner-3.jpg',       // living-room style lobby
-  banquet:'images/mobile-banner-1.jpg'     // pink blossom tree
+  hotel:'mobile-banner-3.jpg',      // green lobby tree
+  restaurant:'mobile-banner-2.jpg', // golden tree hall
+  home:'mobile-banner-3.jpg',       // living-room style lobby
+  banquet:'mobile-banner-1.jpg'     // pink blossom tree
 };
 const mqMobile=window.matchMedia('(max-width:760px)');
 const BG_FALLBACK='linear-gradient(135deg,#e3f3e3,#c3e2c8)';
@@ -703,7 +703,7 @@ function bgFor(k){
   const d=TYPES[k];
   return (mqMobile.matches&&MIMG[k]?`url("${MIMG[k]}"),`:'')+`url("${d.img}"),${BG_FALLBACK}`;
 }
-const CATS=[['Large Artificial Trees','images/banner.jpg'],['Artificial Palm Trees','images/banner1.jpg'],['Flowering Trees','images/banner2.jpg'],['Designer Planters',IMG.pot]];
+const CATS=[['Large Artificial Trees','banner.jpg'],['Artificial Palm Trees','banner1.jpg'],['Flowering Trees','banner2.jpg'],['Designer Planters',IMG.pot]];
 const SOLS=[
  ['Hotel Lobby & Reception','Make a Lasting First Impression',IMG.hotel],
  ['Restaurants & Cafés','Fresh Vibes, Always',IMG.rest],
